@@ -56,26 +56,12 @@ body {
 }
 
 .icon {
-    width: 100px;
+    width: 150px;
     height: auto;
 }
 
 .navBarHome > ul > li:hover, .navBarHome > ul > li:hover a, .navBarHome > ul > li:hover img {
     background-color: aliceblue;
-}
-
-footer {
-    grid-area: foot;
-    border-top: 2px solid var(--blue);
-    width: 100%;
-    height: 50%;
-    background-color: #d4cfc5;
-    margin-top: 5%;
-}
-
-footer > p {
-    padding-left: 5%;
-    background-color: #d4cfc5;
 }
 
 .navBar {
@@ -86,8 +72,8 @@ footer > p {
 
 .navBar > li {
     margin: 0 10px;
-    border: 2px solid var(--blue);
-    padding: 10px;
+    border: 3px solid var(--blue);
+    padding: 0;
     text-align: center;
     border-radius: 5px;
     transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
@@ -103,14 +89,23 @@ footer > p {
 }
 
 .navBar > li:hover {
-    border-color: var(--blue);
-    box-shadow: 5px 5px 3px black;
-    background-color: aliceblue;
+    box-shadow: 7px 7px 5px black;
+    
 }
 
-.navBar > li:hover .icon {
-    background-color: aliceblue;
-    transition: background-color 0.3s ease-in-out;
+
+footer {
+    grid-area: foot;
+    border-top: 2px solid var(--blue);
+    width: 100%;
+    height: 50%;
+    background-color: #d4cfc5;
+    margin-top: 5%;
+}
+
+footer > p {
+    padding-left: 5%;
+    background-color: #d4cfc5;
 }
 
 .logo {
