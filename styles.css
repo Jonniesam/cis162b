@@ -4,6 +4,7 @@
 
 * {
     background-color: #e0dad0;
+    overflow: hidden;
 }
 
 body {
@@ -39,18 +40,6 @@ body {
     justify-content: center;
 }
 
-.pageHeader {
-    display: grid;
-    grid-template-columns: 2fr 1.5fr;
-    place-items: center;
-    border-bottom: 3px solid var(--blue);
-}
-
-.headerLeft {
-    display: grid;
-    grid-template-columns: .5fr 1fr;
-}
-
 .navBarHome {
     grid-area: nav;
 }
@@ -68,6 +57,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     list-style-type: none;
+    overflow: visible;
 }
 
 .navBar > li {
@@ -86,10 +76,11 @@ body {
     display: block;
     height: 100%;
     width: 100%;
+    
 }
 
 .navBar > li:hover {
-    box-shadow: 7px 7px 5px black;
+    box-shadow: 7px 7px 5px black;   
     
 }
 
@@ -108,10 +99,31 @@ footer > p {
     background-color: #d4cfc5;
 }
 
+.pageHeader {
+    display: grid;
+    grid-template-columns: 2fr 1.5fr;
+    place-items: center;
+    border-bottom: 3px solid var(--blue);
+}
+
+.headerLeft {
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+}
+
+.headerLeft{
+    font-family: cursive;
+}
+
 .logo {
     width: 50px;
     height: 50px;
     grid-column-start: 1;
+    transition: scale 0.3s ease-in-out;
+}
+
+.logo:hover{
+    scale: 1.1;
 }
 
 .logoHome {
@@ -119,7 +131,25 @@ footer > p {
     height: auto;
 }
 
+main {
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 1fr;
+    grid-template-rows: .5fr 3fr 1fr;
+    grid-template-areas: 
+    ". title title. "
+    ". left right ."
+    "foot foot foot foot";
+    height: 97%;
+    place-items: center;
+}
+
+.pageTitle{
+    grid-area: title;
+    font-size: 48px;
+}
+
 .aboutRight {
+    grid-area: right;
     width: 65%;
     text-align: justify;
     margin-left: 10%;
@@ -128,12 +158,25 @@ footer > p {
     border-radius: 5px;
 }
 
+.signature{
+    text-align: right;
+}
+
+.aboutLeft{
+    grid-area: left;
+}
+
 .artist {
     height: auto;
     width: 500px;
-    margin-left: 25%;
-    margin-top: 5%;
+    margin-top: 3%;
     border-radius: 5px;
+    border: 10px solid aliceblue;
+    transition: scale 0.3s ease-in-out;
+}
+
+.artist:hover{
+    scale: 1.1;
 }
 
 h1 {
@@ -142,12 +185,13 @@ h1 {
     text-decoration: underline;
 }
 
-main {
-    display: grid;
-    grid-template-columns: 2fr 2fr;
+
+.pageNavBar > ul > li{
+    width: 70px;
+    height: 30px;
 }
 
-.pageNavBar > ul > li:hover {
+.pageNavBar > ul > li a:hover {
     border-color: var(--blue);
     background-color: aliceblue;
     box-shadow: 5px 5px 3px black;
