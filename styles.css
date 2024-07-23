@@ -307,8 +307,12 @@ input:focus, textarea:focus{
     transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out, color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out;
 }
 
-button:hover{
+.submit, .reset:hover{
     scale: 1.1;
+}
+
+button:hover{
+    
     box-shadow: 5px 5px 5px black;
     background-color: var(--blue);
     color: white;
