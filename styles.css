@@ -334,7 +334,7 @@ button:hover{
     grid-template-rows: auto;
     gap: 20px;
     width: 100%;
-    max-height: 75vh; /* Adjust this value as needed */
+    max-height: 75vh;
     overflow-y: auto;
     margin-top: 0;
     margin-bottom: 0;
@@ -398,3 +398,19 @@ span{
     height: 150px;
     width: auto;
 }
+
+.shopImg{
+    width: 200px;
+    height: auto;
+}
+
+.shopContainer{
+    grid-area: gallery;
+    width: 100%;
+    max-height: 75vh;
+    overflow-y: auto;
+    margin-top: 0;
+    margin-bottom: 0;
+    place-items: center;
+}
+
