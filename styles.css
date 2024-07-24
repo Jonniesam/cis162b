@@ -144,7 +144,7 @@ footer > p {
     grid-template-rows: .5fr 3fr .35fr;
     grid-template-areas:
         ". title title ."
-        ". left right ."
+        ". left right right"
         "foot foot foot foot";
     height: 97%;
     place-items: center;
@@ -163,12 +163,14 @@ footer > p {
 
 .aboutRight {
     grid-area: right;
-    width: 65%;
+    width: 75%;
     text-align: justify;
     margin-left: 10%;
     font-size: 1.3rem;
     padding: 0 10px;
     border-radius: 5px;
+    height: 70vh;
+    overflow-y: auto;
 }
 
 .signature {
